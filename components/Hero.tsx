@@ -12,7 +12,7 @@ export default function Hero() {
             <div className="absolute top-0 right-0 w-full h-full bg-green/5 z-0" />
 
             {/* Main Centered Container */}
-            <div className="w-full px-8 md:px-24 lg:px-32 relative z-10 flex flex-col items-center">
+            <div className="w-full px-6 sm:px-12 md:px-24 lg:px-32 relative z-10 flex flex-col items-center">
                 <div className="max-w-7xl mx-auto w-full flex flex-col items-center">
 
                     <motion.div
@@ -23,7 +23,7 @@ export default function Hero() {
                     >
 
                         {/* Location Bar */}
-                        <div className="mb-4">
+                        <div className="mb-4 w-full flex justify-start">
                             <LocationStatus />
                         </div>
 
@@ -64,7 +64,10 @@ export default function Hero() {
                                 Start Free Trial <ArrowRight className="w-6 h-6" />
                             </button>
 
-                            <button className="btn-outline flex items-center justify-center gap-3 text-lg px-12 py-5">
+                            <button 
+                                onClick={() => document.getElementById("quiz")?.scrollIntoView({ behavior: "smooth" })}
+                                className="btn-outline flex items-center justify-center gap-3 text-lg px-12 py-5"
+                            >
                                 View Programs
                             </button>
                         </div>

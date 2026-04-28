@@ -57,7 +57,7 @@ export default function Footer() {
               <Dumbbell className="text-white w-6 h-6" />
             </div>
             <span className="text-xl font-black tracking-widest text-slate-900 uppercase">
-              Iron Wellness
+              Iron Heaven
             </span>
           </div>
         </motion.div>
@@ -72,9 +72,9 @@ export default function Footer() {
           {/* Nav Links */}
           <nav className="flex flex-wrap justify-center gap-6 md:gap-10">
             {["Programs", "Philosophy", "Success", "Contact"].map((link) => (
-              <a 
-                key={link} 
-                href="#" 
+              <a
+                key={link}
+                href="#"
                 className="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-green transition-colors"
               >
                 {link}
@@ -89,9 +89,9 @@ export default function Footer() {
               { Icon: Share2, label: "Share" },
               { Icon: Mail, label: "Email" },
             ].map(({ Icon, label }, i) => (
-              <a 
-                key={i} 
-                href="#" 
+              <a
+                key={i}
+                href="#"
                 aria-label={label}
                 className="w-11 h-11 rounded-xl border border-slate-100 flex items-center justify-center text-slate-400 hover:bg-green hover:border-green hover:text-white transition-all duration-200 cursor-pointer"
               >

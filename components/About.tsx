@@ -6,12 +6,12 @@ import { CheckCircle2 } from "lucide-react";
 
 export default function About() {
   return (
-    <section className="py-32 bg-white relative overflow-hidden flex flex-col items-center">
+    <section className="py-20 md:py-32 bg-white relative overflow-hidden flex flex-col items-center">
       
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-1/2 h-full bg-slate-50 -skew-x-12 -translate-x-1/3 z-0" />
 
-      <div className="w-full px-8 md:px-24 lg:px-32 relative z-10 flex flex-col items-center">
+      <div className="w-full px-6 sm:px-12 md:px-24 lg:px-32 relative z-10 flex flex-col items-center">
         
         {/* Header - Bulletproof Centering */}
         <div className="flex flex-col items-center text-center gap-6 mb-24 w-full">
@@ -21,7 +21,7 @@ export default function About() {
             viewport={{ once: true }}
             className="flex flex-col items-center gap-6 max-w-5xl"
           >
-            <span className="text-orange font-bold uppercase tracking-widest text-xs bg-white px-8 py-2 rounded-full shadow-sm border border-slate-100">
+            <span className="text-orange font-bold uppercase tracking-widest text-xs bg-white px-8 py-3 mt-4 md:mt-0 rounded-full shadow-sm border border-slate-100 inline-block">
               Our Philosophy
             </span>
             <h2 className="text-4xl md:text-7xl font-black text-slate-900 leading-tight">
@@ -97,7 +97,10 @@ export default function About() {
                   ))}
                 </div>
 
-                <button className="btn-secondary px-10 py-4 text-lg shadow-xl shadow-green/10">
+                <button 
+                  onClick={() => document.getElementById("quiz")?.scrollIntoView({ behavior: "smooth" })}
+                  className="btn-secondary px-10 py-4 text-lg shadow-xl shadow-green/10"
+                >
                   Discover Our Method
                 </button>
 

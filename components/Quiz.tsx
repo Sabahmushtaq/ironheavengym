@@ -63,7 +63,7 @@ export default function Quiz() {
   const progress = ((currentStep + 1) / steps.length) * 100;
 
   return (
-    <section id="quiz" className="py-32 bg-slate-50 relative overflow-hidden flex flex-col items-center">
+    <section id="quiz" className="py-20 md:py-32 bg-slate-50 relative overflow-hidden flex flex-col items-center">
       
       {/* Background Blobs */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
@@ -72,11 +72,11 @@ export default function Quiz() {
       </div>
 
       {/* Main Centered Container */}
-      <div className="w-full max-w-7xl mx-auto px-8 md:px-24 lg:px-32 relative z-10 flex flex-col items-center">
+      <div className="w-full max-w-7xl mx-auto px-6 sm:px-12 md:px-24 lg:px-32 relative z-10 flex flex-col items-center">
         
         {/* Header Section */}
         <div className="flex flex-col items-center text-center gap-6 mb-20 w-full">
-          <span className="text-orange font-bold uppercase tracking-widest text-[10px] md:text-xs bg-white px-8 py-2 rounded-full shadow-sm border border-slate-100 inline-block">
+          <span className="text-orange font-bold uppercase tracking-widest text-[10px] md:text-xs bg-white px-8 py-3 mt-4 md:mt-0 rounded-full shadow-sm border border-slate-100 inline-block">
             Step Into Your Future
           </span>
           <h2 className="text-4xl md:text-7xl font-black text-slate-900 leading-tight">

@@ -6,12 +6,12 @@ import { CheckCircle2 } from "lucide-react";
 
 export default function Transformation() {
   return (
-    <section className="py-32 relative overflow-hidden bg-slate-50">
-      <div className="w-full px-8 md:px-24 lg:px-32 relative z-10">
+    <section className="py-20 md:py-32 relative overflow-hidden bg-slate-50">
+      <div className="w-full px-6 sm:px-12 md:px-24 lg:px-32 relative z-10">
         
         {/* Header Section - Centered for better UI */}
         <div className="flex flex-col items-center text-center gap-6 mb-20">
-          <span className="text-green font-bold uppercase tracking-widest text-sm bg-green/5 px-10 py-1 rounded-full">
+          <span className="text-green font-bold uppercase tracking-widest text-sm bg-green/5 px-10 py-3 mt-4 md:mt-0 rounded-full inline-block">
             Real Results
           </span>
           <h2 className="text-4xl md:text-6xl font-black text-slate-900 leading-tight max-w-4xl">
@@ -50,11 +50,11 @@ export default function Transformation() {
               transition={{ duration: 0.8 }}
               className="order-1 md:order-2 flex flex-col items-center md:items-start text-center md:text-left"
             >
-              <h3 className="text-3xl md:text-4xl font-bold mb-8 text-slate-900">
-                Sustainable Changes <br /> That Last
+              <h3 className="text-3xl md:text-4xl font-bold mb-8 text-slate-900 px-4 md:px-0">
+                Sustainable Changes <br className="hidden md:block" /> That Last
               </h3>
               
-              <div className="space-y-6 w-full">
+              <div className="space-y-6 w-full px-4 md:px-0">
                 {[
                   "Sustainable weight management",
                   "Increased energy and mental clarity",
@@ -70,9 +70,14 @@ export default function Transformation() {
                 ))}
               </div>
 
-              <button className="btn-secondary mt-12 text-lg px-10 py-4 shadow-xl shadow-green/10">
-                Read Success Stories
-              </button>
+              <div className="px-4 md:px-0 w-full md:w-auto mt-12">
+                <button 
+                  onClick={() => document.getElementById("quiz")?.scrollIntoView({ behavior: "smooth" })}
+                  className="btn-secondary text-xl font-black px-12 py-6 w-full md:w-auto shadow-xl shadow-green/20"
+                >
+                  Read Success Stories
+                </button>
+              </div>
             </motion.div>
           </div>
         </div>

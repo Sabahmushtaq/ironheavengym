@@ -38,8 +38,8 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-32 bg-slate-50 overflow-hidden flex flex-col items-center">
-      <div className="w-full px-8 md:px-24 lg:px-32 relative z-10 flex flex-col items-center">
+    <section className="py-20 md:py-32 bg-slate-50 overflow-hidden flex flex-col items-center">
+      <div className="w-full px-6 sm:px-12 md:px-24 lg:px-32 relative z-10 flex flex-col items-center">
         
         {/* Header - Centered Style */}
         <div className="flex flex-col items-center text-center gap-6 mb-24 w-full">
@@ -49,7 +49,7 @@ export default function Features() {
             viewport={{ once: true }}
             className="flex flex-col items-center gap-6 max-w-4xl"
           >
-            <span className="text-orange font-bold uppercase tracking-widest text-xs bg-white px-8 py-2 rounded-full shadow-sm border border-slate-100">
+            <span className="text-orange font-bold uppercase tracking-widest text-xs bg-white px-8 py-3 mt-4 md:mt-0 rounded-full shadow-sm border border-slate-100 inline-block">
               Why Join Us
             </span>
             <h2 className="text-4xl md:text-7xl font-black text-slate-900 leading-tight">

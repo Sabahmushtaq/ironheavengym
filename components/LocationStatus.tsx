@@ -44,11 +44,11 @@ export default function LocationStatus() {
   }, []);
 
   return (
-    <div className="flex justify-center mb-8">
+    <div className="flex justify-start mb-6 w-full">
       <motion.div 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="inline-flex items-center gap-4 bg-white/80 backdrop-blur-md border border-slate-100 py-2 px-5 rounded-full shadow-lg shadow-slate-200/50"
+        className="inline-flex items-center gap-4 bg-white/90 backdrop-blur-md border border-slate-200 py-3 px-6 rounded-2xl shadow-xl shadow-slate-200/50"
       >
         <div className="relative">
           <MapPin className={`w-5 h-5 ${error ? "text-slate-300" : "text-green"}`} />
